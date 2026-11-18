@@ -111,7 +111,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.03; letter-spacing: -.0
 .card-art.ortu { padding: clamp(.7rem, 2.4vw, 1.4rem); background: radial-gradient(ellipse at 50% 40%, #e7edcf, #a6baa0); }
 .card-art.ortu img { width: auto; height: 100%; border-radius: 6px; object-fit: contain; box-shadow: 0 8px 22px #22332236; }
 .card-art.tri { background: #193a26; }
-.card-art.tri img { width: 100%; height: 100%; object-fit: cover; }
+.card-art.tri img { width: 100%; height: 100%; object-fit: contain; }
 .card-body { flex: 1; display: flex; flex-direction: column; align-items: start; padding: clamp(1.15rem, 3vw, 2rem); }
 .card h3 { margin: .5rem 0 .55rem; font-size: clamp(1.8rem, 3vw, 2.75rem); }
 .card-body > p:not(.eyebrow) { max-width: 52ch; margin-bottom: 1rem; color: var(--muted); }
@@ -143,7 +143,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.03; letter-spacing: -.0
 .project-lead-art { overflow: hidden; border-radius: 16px; }
 .project-lead-art .card-art { aspect-ratio: 2.9; }
 .project-lead-art .card-art .phone { max-width: clamp(110px, 18vw, 250px); }
-.project-lead-art .card-art.tri { aspect-ratio: 2.4; }
+.project-lead-art .card-art.tri { aspect-ratio: 16/9; }
 .project-lead-art .wide { width: 100%; max-height: 580px; object-fit: cover; }
 .project-lead-art.site-hero { padding: clamp(.8rem, 3vw, 2rem); background: #dce6d4; }
 .site-hero img { width: 100%; border-radius: 8px; }
@@ -161,6 +161,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.03; letter-spacing: -.0
 .video-panel.vertical video { max-height: 570px; aspect-ratio: auto; }
 .video-panel figcaption { padding: .75rem 1rem; color: var(--muted); font-size: .9rem; }
 .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.screenshot-note { margin: -.5rem 0 1.25rem; color: var(--muted); }
 .gallery.portraits { grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); }
 .gallery figure { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--rule); border-radius: 11px; background: var(--panel); }
 .gallery a { display: grid; place-items: center; position: relative; background: #18251d; }

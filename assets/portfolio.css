@@ -218,3 +218,8 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.03; letter-spacing: -.0
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Learning Studio client concept, using the existing portfolio card system. */
+.card-art.learning-studio { padding: clamp(.7rem, 2.4vw, 1.4rem); background: #dce6d4; }
+.card-art.learning-studio img { width: auto; height: 100%; object-fit: contain; border-radius: 6px; box-shadow: 0 8px 22px #22332236; }
+.concept-context { max-width: 78ch; margin-top: 1.2rem; color: var(--muted); }

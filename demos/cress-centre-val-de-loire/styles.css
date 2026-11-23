@@ -22,3 +22,7 @@
 .footer-bottom{align-items:start;flex-wrap:wrap}.footer-bottom>div{flex-wrap:wrap;justify-content:flex-end;row-gap:12px}
 .credits-list{list-style:none;padding:0;margin:24px 0}.credits-list li{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}.credits-list strong{font-size:1rem}.credits-list p{margin-top:9px;font-size:.9rem}
 @media(max-width:640px){.concept-banner{padding:12px 0}.concept-banner p{font-size:.8125rem}.demo-note,.partner-disclaimer{font-size:.8125rem}.territory-demo{margin-top:-8px}.footer-bottom>div{justify-content:flex-start}.credits-list p{font-size:.875rem}}
+
+/* Cadrages adaptés aux nouvelles photos d’illustration. */
+.photo-frame img{object-position:65% 50%}.photo-disclaimer{font-size:.8125rem;line-height:1.65;margin-top:20px;color:var(--muted)}
+@media(max-width:640px){.photo-frame img{object-position:64% 38%}}

@@ -18,6 +18,12 @@
     "Credits, rights status, authorship, information dialogs, close buttons",
     "Mobile menus: all internal destinations and toggle tested at 320,375,390,768px"
   ],
+  "photos": {
+    "licensed_photographs": 4,
+    "license": "Pexels",
+    "cover": "Original SVG",
+    "captions": "Illustration, no CRESS identities attributed"
+  },
   "editorial_checks": [
     "Exact requested banner",
     "Independent author in footer",

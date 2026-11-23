@@ -11,7 +11,7 @@
     "1920": "No overflow"
   },
   "interactions": [
-    "All 79 EPCI selections checked: labels, synchronized map, exact official destination URLs",
+    "All 79 EPCI selections checked: labels, synchronized map, local preview destinations linked to the original sources",
     "Keyboard map activation",
     "Accent insensitive resource search, type filter, empty state, reset",
     "Global search, dialog Escape, native focus management",

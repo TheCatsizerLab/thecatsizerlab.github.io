@@ -11,3 +11,14 @@
 @media(max-width:640px){.hero h1 br:nth-of-type(2){display:initial}.hero-visual figcaption .eyebrow{font-size:.66rem}.hero-visual figcaption>span:not(.eyebrow){font-size:.8rem}.pathways-grid .pathway-detail{font-size:.8rem}.pathways-grid strong{font-size:.95rem}.territory-panel label,.resource-result p,.event .eyebrow,.news-mini-grid .eyebrow,.result-count,.footer-bottom{font-size:.8rem}.publication-feature{grid-template-columns:90px 1fr;padding:20px 15px;gap:16px}.publication-feature p{font-size:.875rem}.publication-feature h3{font-size:1.1rem}.publication-feature .tag{font-size:.65rem}.publication-feature .text-link{font-size:.8rem}.news-mini-grid h3{font-size:1rem}.event-date span,.event .tag{font-size:.75rem}.territory-footnote{font-size:.8rem}.prototype-note{font-size:.75rem}.pathways-grid>a{min-height:218px}.hero-visual figcaption{right:12px}.hero-visual{height:420px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{.utility,.header nav,.search-toggle,.menu-toggle,.header-join,.prototype-note{display:none}.container{width:92%}.section{padding-block:35px}.territories,.join{-webkit-print-color-adjust:exact;print-color-adjust:exact}.hero{padding-top:10px}.hero-visual{min-height:500px}.section,.news-feature,.territory-layout{break-inside:avoid}a{text-decoration:none}dialog{display:none}}
 .event-date span{white-space:nowrap;font-size:.7rem}
+
+/* Mentions du concept : ajouts éditoriaux sans modification des composants existants. */
+.concept-banner{background:#edf6f8;border-bottom:1px solid #c6dce5;border-top:3px solid var(--blue);padding:12px 0}
+.concept-banner p{font-size:.875rem;line-height:1.65;color:var(--ink)}
+.concept-banner strong{font-weight:800;color:var(--blue)}
+.demo-note{font-size:.875rem;line-height:1.65;color:var(--muted);border-left:2px solid #b7d5e0;padding-left:12px}
+.territory-demo{margin:-9px 0 22px}.resource-demo{margin:-10px 0 25px;max-width:850px}
+.partner-disclaimer{font-size:.875rem;line-height:1.65;max-width:760px;text-align:center;margin:20px auto 0}
+.footer-bottom{align-items:start;flex-wrap:wrap}.footer-bottom>div{flex-wrap:wrap;justify-content:flex-end;row-gap:12px}
+.credits-list{list-style:none;padding:0;margin:24px 0}.credits-list li{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}.credits-list strong{font-size:1rem}.credits-list p{margin-top:9px;font-size:.9rem}
+@media(max-width:640px){.concept-banner{padding:12px 0}.concept-banner p{font-size:.8125rem}.demo-note,.partner-disclaimer{font-size:.8125rem}.territory-demo{margin-top:-8px}.footer-bottom>div{justify-content:flex-start}.credits-list p{font-size:.875rem}}

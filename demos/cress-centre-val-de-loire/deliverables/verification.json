@@ -1,4 +1,6 @@
 {
+  "scope": "Finalisation du concept indépendant de José Giovinazzo",
+  "verified_on": "2026-11-23",
   "widths": {
     "320": "No overflow",
     "375": "No overflow",
@@ -9,11 +11,20 @@
     "1920": "No overflow"
   },
   "interactions": [
-    "6 departments, 79 EPCI options, synchronized map, correct destination prefixes",
+    "All 79 EPCI selections checked: labels, synchronized map, exact official destination URLs",
     "Keyboard map activation",
     "Accent insensitive resource search, type filter, empty state, reset",
     "Global search, dialog Escape, native focus management",
-    "Mobile menu opening, navigation, closing"
+    "Credits, rights status, authorship, information dialogs, close buttons",
+    "Mobile menus: all internal destinations and toggle tested at 320,375,390,768px"
+  ],
+  "editorial_checks": [
+    "Exact requested banner",
+    "Independent author in footer",
+    "No institutional copyright claim",
+    "noindex,nofollow,noimageindex",
+    "8 original sections and 4 pathways preserved",
+    "Demo scope visible next to controls"
   ],
   "automated_accessibility": {
     "violations": [],

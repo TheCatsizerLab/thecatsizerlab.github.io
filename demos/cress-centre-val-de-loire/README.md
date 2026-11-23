@@ -1,6 +1,8 @@
 # CRESS Centre-Val de Loire — proposition de refonte 2026–2027
 
-Maquette haute fidélité et prototype responsive de la page d’accueil, préparés pour une candidature à l’appel à prestataires. **Proposition créative préliminaire, à valider avec la CRESS.**
+Maquette haute fidélité et prototype responsive de la page d’accueil, réalisés par **José Giovinazzo** pour sa candidature freelance à l’appel à prestataires 2026. **Concept indépendant, non officiel, non validé par la CRESS.**
+
+Le bandeau d’ouverture et le pied de page distinguent explicitement cette proposition du véritable site institutionnel. Le design, les huit sections, les quatre parcours et les fonctionnalités de la proposition initiale sont conservés. Les logos des soutiens de la CRESS n’expriment aucun soutien à cette candidature.
 
 ## Consulter les livrables
 
@@ -10,6 +12,7 @@ Maquette haute fidélité et prototype responsive de la page d’accueil, prépa
 - [Maquette desktop en PDF](./deliverables/maquette-desktop.pdf)
 - [Maquette mobile en PDF](./deliverables/maquette-mobile.pdf)
 - [Rapport de vérification](./deliverables/verification.json)
+- [Crédits et statut des droits des visuels](./CREDITS-VISUELS.md)
 
 Le prototype fonctionne sans installation ni compilation. Ouvrir `index.html` dans un navigateur, ou lancer `python -m http.server 4174` dans ce dossier. Les images, polices et données sont locales. Les liens de détail renvoient aux contenus réels du site CRESS.
 
@@ -46,9 +49,10 @@ Le bloc territorial consommerait les contenus structurés via l’API REST de Wo
 Contrôles effectués sur Chromium :
 
 - Aucun débordement horizontal aux largeurs 320, 375, 390, 768, 1024, 1440 et 1920 px.
-- Six départements, 79 options EPCI, activation de la carte au clavier et synchronisation des liens.
+- Six départements, chacune des 79 sélections EPCI vérifiée (libellé et URL source), activation de la carte au clavier et synchronisation des liens.
 - Recherche documentaire, filtres, absence de résultat et réinitialisation.
-- Recherche globale, fermeture des fenêtres avec Échap et menu mobile.
+- Recherche globale, transmission du mot-clé au lien de recherche du site officiel, fermeture des fenêtres avec Échap et menus mobiles aux largeurs 320, 375, 390 et 768 px.
+- Texte exact du bandeau, attribution du concept, huit sections conservées, mentions de démonstration, crédits et fenêtres d’information.
 - Chargement de toutes les images et absence d’erreur JavaScript.
 - Analyse axe-core 4.10.3 : **aucune violation détectée sur les règles WCAG A/AA sélectionnées, 26 vérifications réussies**. Le rapport est joint.
 
@@ -72,6 +76,8 @@ Sources consultées le **23 novembre 2026**, avant la conception :
 | Fond cartographique | [france-geojson, Grégoire David](https://github.com/gregoiredavid/france-geojson), contours issus des données IGN, selon les crédits du projet ; projection SVG simplifiée pour cette maquette |
 | Typographie | [Manrope](https://fonts.google.com/specimen/Manrope), SIL Open Font License, fichiers hébergés localement |
 
-Les logos des soutiens affichés — Préfet de région, Région Centre-Val de Loire et Union européenne — sont ceux présents sur le site actuel. Les marques, photographies et couvertures restent la propriété de leurs ayants droit. Leur présence dans ce dossier de candidature n’accorde aucune licence générale de réutilisation ; autorisations et crédits devront être confirmés avant mise en production.
+Les logos des soutiens affichés — Préfet de région, Région Centre-Val de Loire et Union européenne — sont ceux présents sur le site actuel. Ils ne constituent pas un soutien à la candidature de José Giovinazzo. Les sources des visuels ont été vérifiées, mais **les autorisations de reproduction des photographies et visuels éditoriaux restent non confirmées**, y compris pour la diffusion publique actuelle du concept. Le [registre des crédits](./CREDITS-VISUELS.md) distingue leur provenance, les crédits non identifiés et les licences connues ; une source ne vaut pas autorisation.
 
-Cette maquette ne collecte aucune donnée personnelle et ne simule pas une inscription effective à la newsletter. La page porte une directive `noindex,nofollow` et une mention explicite de son caractère préliminaire.
+Les filtres territoriaux, le filtre documentaire et la recherche fonctionnent localement ; leur périmètre de démonstration est indiqué près des contrôles. Ils ne sont pas connectés à un CMS et ne s’actualisent pas en temps réel. Les démarches d’adhésion, de contact et de newsletter sont des liens vers la CRESS ; aucune de ces démarches n’est traitée par le prototype.
+
+La page ne comporte aucun formulaire de collecte, cookie applicatif ou outil de mesure d’audience. Son hébergement relève de GitHub Pages. Elle porte la directive `noindex,nofollow,noimageindex`, confirmée dans les tests. Aucun fichier `robots.txt` bloquant l’accès à cette directive n’est ajouté.

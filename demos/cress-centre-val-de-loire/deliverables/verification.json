@@ -1,0 +1,24 @@
+{
+  "widths": {
+    "320": "No overflow",
+    "375": "No overflow",
+    "390": "No overflow",
+    "768": "No overflow",
+    "1024": "No overflow",
+    "1440": "No overflow",
+    "1920": "No overflow"
+  },
+  "interactions": [
+    "6 departments, 79 EPCI options, synchronized map, correct destination prefixes",
+    "Keyboard map activation",
+    "Accent insensitive resource search, type filter, empty state, reset",
+    "Global search, dialog Escape, native focus management",
+    "Mobile menu opening, navigation, closing"
+  ],
+  "automated_accessibility": {
+    "violations": [],
+    "passes": 26
+  },
+  "images": "All images loaded",
+  "javascript_errors": []
+}

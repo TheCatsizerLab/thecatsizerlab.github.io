@@ -1,0 +1,77 @@
+# CRESS Centre-Val de Loire — proposition de refonte 2026–2027
+
+Maquette haute fidélité et prototype responsive de la page d’accueil, préparés pour une candidature à l’appel à prestataires. **Proposition créative préliminaire, à valider avec la CRESS.**
+
+## Consulter les livrables
+
+- [Ouvrir la maquette interactive](./index.html)
+- [Accueil desktop complet, 1440 px](./deliverables/desktop-1440.png)
+- [Accueil mobile complet, 390 px](./deliverables/mobile-390.png)
+- [Maquette desktop en PDF](./deliverables/maquette-desktop.pdf)
+- [Maquette mobile en PDF](./deliverables/maquette-mobile.pdf)
+- [Rapport de vérification](./deliverables/verification.json)
+
+Le prototype fonctionne sans installation ni compilation. Ouvrir `index.html` dans un navigateur, ou lancer `python -m http.server 4174` dans ce dossier. Les images, polices et données sont locales. Les liens de détail renvoient aux contenus réels du site CRESS.
+
+## Principaux choix UX/UI
+
+**Entrer par un besoin.** Quatre accès immédiats orientent les porteurs de projets, structures ESS, collectivités et personnes recherchant des études. La navigation distingue comprendre, être accompagné, explorer un territoire et s’informer, conformément au principe directeur du cahier des charges.
+
+**Moderniser l’identité existante.** Le logo officiel CRESS/ESS est conservé dans son intégralité. Le bleu institutionnel `#00628b`, le cyan et l’accent rouge structurent une composition sobre. La typographie Manrope, les niveaux de titres et les espaces donnent une lecture éditoriale plutôt qu’un catalogue de cartes.
+
+**Montrer une économie incarnée.** Le portrait de Djamila El Yazidi provient de l’article CRESS consacré aux Jardins de la Voie Romaine. Son lieu de travail, l’activité de l’association et l’ancrage dans le Loiret donnent un contexte concret à la mission régionale. Le texte d’introduction et certains titres sont des propositions de rédaction, pas des formulations institutionnelles déjà validées.
+
+**Faire du territoire une véritable entrée.** La carte représente les contours géographiques des six départements réels. Carte et sélection de département sont synchronisées. Le second champ propose les 79 fiches EPCI actuellement référencées sur l’accueil CRESS. Chaque choix met à jour le nom et le lien de la fiche. Les champs offrent une alternative complète à la carte, notamment sur mobile et au clavier. Aucun indicateur territorial n’est inventé ; les données chiffrées restent dans leur publication source avec son millésime.
+
+**Rendre les ressources trouvables.** La recherche par mot-clé, insensible aux accents, et le filtre par type agissent sur une sélection de publications vérifiées. Le nombre de résultats, la réinitialisation et l’absence de résultat sont traités. La recherche d’en-tête inclut services, publications et territoires. Ce moteur local sert la démonstration ; l’index documentaire complet relève du futur CMS.
+
+**Adapter réellement la composition au mobile.** La navigation devient un menu repliable, les quatre parcours une grille de deux colonnes, la carte et ses champs se suivent, et l’agenda rejoint le flux éditorial. Aucun contenu essentiel n’est masqué sur petit écran.
+
+## Transposition WordPress
+
+Le prototype est volontairement indépendant d’un CMS. Une intégration WordPress peut reprendre ses composants en blocs Gutenberg : ouverture, parcours, service mis en avant, liste de services, explorateur territorial, bibliothèque, actualités, agenda et adhésion.
+
+| Contenu | Modèle proposé | Champs ou taxonomies utiles |
+| --- | --- | --- |
+| Services | Type de contenu Service | Public, besoin, dispositif, contact, lien partenaire |
+| Ressources | Type de contenu Ressource | Type, thème, territoire, année, fichier, source et millésime |
+| Fiches territoriales | Type de contenu Territoire | Département, code EPCI, nom, indicateurs datés, publication associée |
+| Actualités et portraits | Articles | Catégorie, département, visuel et crédits |
+| Agenda | Type de contenu Événement | Début, fin, lieu, format, inscription |
+
+Le bloc territorial consommerait les contenus structurés via l’API REST de WordPress. Les fichiers de ce prototype ne constituent pas un thème WordPress prêt à installer. Le futur développement devra prévoir l’administration, les redirections des anciennes URL, la migration qualifiée des contenus, le moteur de recherche global, la sécurité, les sauvegardes, la mesure d’audience et la formation mentionnés dans le cahier des charges. Les composants et le périmètre de la maquette visent à rester compatibles avec l’enveloppe annoncée de 10 000 € TTC, sans constituer une offre financière.
+
+## Accessibilité et vérifications
+
+Contrôles effectués sur Chromium :
+
+- Aucun débordement horizontal aux largeurs 320, 375, 390, 768, 1024, 1440 et 1920 px.
+- Six départements, 79 options EPCI, activation de la carte au clavier et synchronisation des liens.
+- Recherche documentaire, filtres, absence de résultat et réinitialisation.
+- Recherche globale, fermeture des fenêtres avec Échap et menu mobile.
+- Chargement de toutes les images et absence d’erreur JavaScript.
+- Analyse axe-core 4.10.3 : **aucune violation détectée sur les règles WCAG A/AA sélectionnées, 26 vérifications réussies**. Le rapport est joint.
+
+Ces contrôles automatiques ne constituent pas un audit RGAA ni une déclaration de conformité. La recette du futur site devra inclure des tests avec lecteur d’écran, zoom, navigateurs multiples et utilisateurs représentatifs. Le prototype propose des champs étiquetés, une hiérarchie sémantique, un lien d’évitement, des focus visibles, des alternatives d’images et la prise en compte de la réduction des animations.
+
+## Sources et crédits
+
+Sources consultées le **23 novembre 2026**, avant la conception :
+
+| Élément | Source |
+| --- | --- |
+| Brief institutionnel complet, 11 pages | [Cahier des charges CRESS](https://www.cresscentre.org/wp-content/uploads/2026/11/CDC-V1.pdf) |
+| Identité, coordonnées, partenaires et 79 liens territoriaux | [Accueil CRESS](https://www.cresscentre.org/) |
+| Services et accompagnement | [Offre de services](https://www.cresscentre.org/offre-de-services/), [DLA](https://www.cresscentre.org/dispositif-local-daccompagnement-en-region-centre/), [Entreprendre](https://www.cresscentre.org/entreprendre-ess/), [Se former](https://www.cresscentre.org/sensibilisation-jeunes/), [Achats responsables](https://www.cresscentre.org/achats-responsables/) |
+| Portrait d’ouverture et initiative mise en avant | [Les Jardins de la Voie Romaine, article du 5 décembre 2025](https://www.cresscentre.org/15105-2/) |
+| Photographie d’ouverture | [Photo de Djamila publiée dans cet article](https://www.cresscentre.org/wp-content/uploads/2025/12/Photo-Djamila-scaled-e1764947314170.jpg) ; photographe non identifié sur la page, crédit à confirmer |
+| Ressources | [Panoramas](https://www.cresscentre.org/type/panoramas/), [Observatoire](https://www.cresscentre.org/nos-etudes/), liens individuels conservés dans `app.js` |
+| Actualités | [CORESS](https://www.cresscentre.org/conference-regionale-de-leconomie-sociale-et-solidaire-coress/), [Salon des Maires 2026](https://www.cresscentre.org/salon-des-maires-2026-nous-y-serons/), [Appel à prestataires](https://www.cresscentre.org/recherche-prestataire-site-internet/) |
+| Agenda du 2 décembre 2026 | [Achats publics responsables](https://www.cresscentre.org/events/rencontre-achats-publics-responsables/), [Accueil Information Orientation](https://www.cresscentre.org/events/webinaire-decouvrez-less-10/) |
+| Adhésion | [Adhérer à la CRESS](https://www.cresscentre.org/adherer-a-la-cress/) |
+| Fond cartographique | [france-geojson, Grégoire David](https://github.com/gregoiredavid/france-geojson), contours issus des données IGN, selon les crédits du projet ; projection SVG simplifiée pour cette maquette |
+| Typographie | [Manrope](https://fonts.google.com/specimen/Manrope), SIL Open Font License, fichiers hébergés localement |
+
+Les logos des soutiens affichés — Préfet de région, Région Centre-Val de Loire et Union européenne — sont ceux présents sur le site actuel. Les marques, photographies et couvertures restent la propriété de leurs ayants droit. Leur présence dans ce dossier de candidature n’accorde aucune licence générale de réutilisation ; autorisations et crédits devront être confirmés avant mise en production.
+
+Cette maquette ne collecte aucune donnée personnelle et ne simule pas une inscription effective à la newsletter. La page porte une directive `noindex,nofollow` et une mention explicite de son caractère préliminaire.

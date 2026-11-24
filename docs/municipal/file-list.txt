@@ -145,6 +145,7 @@ demos/municipal-website/vivre/solidarite/index.html
 demos/municipal-website/vivre/sport/index.html
 docs/municipal/design-research.txt
 docs/municipal/file-list.txt
+docs/municipal/lighthouse-results.json
 docs/municipal/technical-guide.txt
 docs/municipal/test-results.json
 docs/municipal/verification.html

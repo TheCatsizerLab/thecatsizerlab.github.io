@@ -788,5 +788,60 @@
       "/demos/municipal-website/administration/",
       "/demos/municipal-website/credits/"
     ]
+  },
+  "production": {
+    "pages": [
+      {
+        "url": "https://thecatsizerlab.github.io/",
+        "status": 200,
+        "h1": "Websites,\nbusiness software\n& mobile apps."
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/fr/",
+        "status": 200,
+        "h1": "Sites web,\nlogiciels métiers\net applications mobiles."
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/projects/municipal-portal.html",
+        "status": 200,
+        "h1": "Valmer-sur-Rive"
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/demos/municipal-website/",
+        "status": 200,
+        "h1": "Une ville\nà vivre."
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/demos/municipal-website/administration/",
+        "status": 200,
+        "h1": "Vue d’ensemble"
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/demos/municipal-website/agenda/marche-hiver/",
+        "status": 200,
+        "h1": "Le marché d’hiver des Tilleuls"
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/projects/image-resizer.html",
+        "status": 200,
+        "h1": "Image Resizer: Compress & Edit"
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/projects/rescue-crew.html",
+        "status": 200,
+        "h1": "Rescue Crew"
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/demos/learning-studio/",
+        "status": 200,
+        "h1": "Les échanges ouvrent\ndes perspectives.\nFaisons-les grandir."
+      },
+      {
+        "url": "https://thecatsizerlab.github.io/demos/cress-centre-val-de-loire/",
+        "status": 200,
+        "h1": "L’économie sociale\net solidaire\nfait vivre\nnos territoires."
+      }
+    ],
+    "js_errors": []
   }
 }

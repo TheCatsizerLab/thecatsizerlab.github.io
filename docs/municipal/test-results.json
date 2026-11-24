@@ -843,5 +843,93 @@
       }
     ],
     "js_errors": []
+  },
+  "language_review_2026_11_25": {
+    "static_pages": 75,
+    "layouts": [
+      {
+        "width": 320,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 481,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 481,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 700,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 700,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "path": "/fr/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "path": "/demos/municipal-website/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "path": "/fr/",
+        "overflow": false
+      }
+    ],
+    "confirmations": [
+      "Votre réservation fictive est enregistrée.",
+      "Votre rendez-vous fictif est enregistré."
+    ],
+    "admin_editors": [
+      "Créer une actualité",
+      "Créer un événement",
+      "Créer une page",
+      "Créer une alerte",
+      "Créer une fiche",
+      "Créer une salle"
+    ],
+    "js_errors": []
   }
 }

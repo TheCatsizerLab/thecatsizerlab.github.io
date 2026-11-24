@@ -11,7 +11,7 @@ with sync_playwright() as p:
   target=page.locator('[data-book-date]:not([disabled])').first;date=target.get_attribute('data-book-date');target.click()
   assert page.locator('select[name=date]').input_value()==date
   page.locator('input[name=slot]:not([disabled])').first.check();page.get_by_role('button',name='Voir le récapitulatif').click()
-  page.get_by_role('button',name='Confirmer la simulation').click();expect(page.locator('#booking-summary')).to_contain_text('est enregistré')
+  page.get_by_role('button',name='Confirmer la simulation').click();expect(page.locator('#booking-summary')).to_contain_text('Votre réservation fictive est enregistrée.')
   assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
  page.goto('http://127.0.0.1:8769/demos/municipal-website/demarches/salles/',wait_until='networkidle')
  page.add_script_tag(path=str(ROOT.parent/'municipal-tooling/node_modules/axe-core/axe.min.js'))

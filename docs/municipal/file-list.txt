@@ -145,6 +145,7 @@ demos/municipal-website/vivre/solidarite/index.html
 demos/municipal-website/vivre/sport/index.html
 docs/municipal/design-research.txt
 docs/municipal/file-list.txt
+docs/municipal/language-review.txt
 docs/municipal/lighthouse-results.json
 docs/municipal/technical-guide.txt
 docs/municipal/test-results.json
@@ -158,6 +159,7 @@ tools/municipal/build.mjs
 tools/municipal/calendar_check.py
 tools/municipal/capture_project.py
 tools/municipal/final_layouts.py
+tools/municipal/language_check.py
 tools/municipal/portfolio_checks.py
 tools/municipal/smoke.py
 tools/municipal/unit.test.mjs

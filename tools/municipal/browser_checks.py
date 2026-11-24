@@ -53,7 +53,7 @@ with sync_playwright() as p:
   form=page.locator('#booking-form');chosen=form.locator('input[name=slot]:not([disabled])').first
   value=chosen.get_attribute('value');date=form.locator('select[name=date]').input_value();chosen.check()
   form.get_by_role('button',name='Voir le récapitulatif').click();expect(page.locator('#booking-summary')).to_contain_text(value)
-  page.get_by_role('button',name='Confirmer la simulation').click();expect(page.locator('#booking-summary')).to_contain_text('est enregistré')
+  page.get_by_role('button',name='Confirmer la simulation').click();expect(page.locator('#booking-summary')).to_contain_text('Votre réservation fictive est enregistrée.')
   goto(page,'demarches/salles/');page.locator('#booking-form select[name=date]').select_option(date)
   expect(page.locator('input[name=slot][value="'+value+'"]').first).to_be_disabled()
   goto(page,'espace-citoyen/');expect(page.locator('.request-list')).to_contain_text('Salle des Tilleuls')

@@ -89,6 +89,7 @@ Beautiful Soup. Install these QA-only tools separately if they are unavailable:
 The current scripts expect the local preview at port 8769.
   python tools/municipal/browser_checks.py
   python tools/municipal/portfolio_checks.py
+  python tools/municipal/language_check.py
   python tools/municipal/capture_project.py
 Browser accessibility checks require axe-core in the sibling municipal-tooling
 QA directory. This tooling is not deployed and is not a runtime dependency.

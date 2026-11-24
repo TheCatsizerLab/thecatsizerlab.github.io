@@ -29,7 +29,8 @@
         "height": 640,
         "bytes": 103454
       }
-    }
+    },
+    "description_fr": "L’Isle-sur-la-Sorgue, dans le Vaucluse : rivière et maisons du centre."
   },
   "market": {
     "title": "File:Aix-en-Provence, Marché provençal.jpg",
@@ -61,7 +62,8 @@
         "height": 674,
         "bytes": 203648
       }
-    }
+    },
+    "description_fr": "Marché à Aix-en-Provence."
   },
   "townhall": {
     "title": "File:Hôtel de ville des Baux-de-Provence cf01.jpg",
@@ -93,7 +95,8 @@
         "height": 641,
         "bytes": 155102
       }
-    }
+    },
+    "description_fr": "Hôtel de ville des Baux-de-Provence, dans les Bouches-du-Rhône."
   },
   "oldtown": {
     "title": "File:Lourmarin - village 2.jpg",
@@ -125,7 +128,8 @@
         "height": 720,
         "bytes": 83114
       }
-    }
+    },
+    "description_fr": "Village de Lourmarin, dans le Vaucluse."
   },
   "school": {
     "title": "File:Cour ecole de Provence.jpg",
@@ -157,7 +161,8 @@
         "height": 720,
         "bytes": 116838
       }
-    }
+    },
+    "description_fr": "Cour de l’école de Provence, avec le collège au premier plan et le lycée à l’arrière-plan."
   },
   "culture": {
     "title": "File:Concert de Lise Berthaud, Raphaël Pidoux, Daishin Kashimoto, Deborah Nemtanu au Festival International de Musique de Chambre de Provence (Musique à L'Empéri).jpg",
@@ -189,7 +194,8 @@
         "height": 640,
         "bytes": 83718
       }
-    }
+    },
+    "description_fr": "Concert de musique de chambre au festival Musique à l’Empéri, en Provence."
   },
   "heritage": {
     "title": "File:Château de Lourmarin vu du village.jpg",
@@ -221,7 +227,8 @@
         "height": 540,
         "bytes": 99374
       }
-    }
+    },
+    "description_fr": "Château de Lourmarin."
   },
   "nature": {
     "title": "File:Luberon Ocre.jpg",
@@ -253,7 +260,8 @@
         "height": 519,
         "bytes": 147734
       }
-    }
+    },
+    "description_fr": "Paysage d’ocre dans le Luberon."
   },
   "sport": {
     "title": "File:Court de Tennis à Bram.jpg",
@@ -285,7 +293,8 @@
         "height": 599,
         "bytes": 117858
       }
-    }
+    },
+    "description_fr": "Un court du Tennis Club du Lauragais."
   },
   "shops": {
     "title": "File:Lourmarin - cafes restaurants (5829875359).jpg",
@@ -317,7 +326,8 @@
         "height": 720,
         "bytes": 94202
       }
-    }
+    },
+    "description_fr": "Cafés et commerces dans le village de Lourmarin."
   },
   "park": {
     "title": "File:Aix-en-provence Le parc Jourdan Allée centrale.jpg",
@@ -349,7 +359,8 @@
         "height": 640,
         "bytes": 157800
       }
-    }
+    },
+    "description_fr": "Allée centrale du parc Jourdan."
   },
   "oldtown-street": {
     "title": "File:Chasing an orange car in Roussillon, Provence, France (6053007400).jpg",
@@ -381,7 +392,8 @@
         "height": 638,
         "bytes": 74774
       }
-    }
+    },
+    "description_fr": "Une rue de Roussillon, en Provence."
   },
   "library": {
     "title": "File:Intérieur médiathèque Capucins Brest 2017 - 01.jpg",
@@ -413,7 +425,8 @@
         "height": 640,
         "bytes": 135042
       }
-    }
+    },
+    "description_fr": "Médiathèque François-Mitterrand – Les Capucins, à Brest, lors de son inauguration en février 2017."
   },
   "works": {
     "title": "File:Travaux Tramway Avignon secteur Rocade Althen.jpg",
@@ -445,6 +458,7 @@
         "height": 1280,
         "bytes": 105000
       }
-    }
+    },
+    "description_fr": "Travaux du tramway d’Avignon, dans le secteur de la Rocade, près de la rue Jean-Althen."
   }
 }

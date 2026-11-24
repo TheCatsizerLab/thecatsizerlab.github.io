@@ -1,0 +1,9 @@
+{
+  "name": "thecatsizerlab-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:municipal": "node tools/municipal/build.mjs",
+    "test:municipal": "node --test tools/municipal/unit.test.mjs"
+  }
+}

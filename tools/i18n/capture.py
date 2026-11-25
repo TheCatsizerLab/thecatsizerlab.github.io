@@ -2,10 +2,12 @@
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from PIL import Image
+import sys
 ROOT=Path(__file__).resolve().parents[2]
 with sync_playwright() as pw:
  browser=pw.chromium.launch(headless=True)
- for lang in ['fr','en','es','it','de']:
+ for lang in (sys.argv[1:] or ['fr','en','es','it','de']):
+  assert lang in ['fr','en','es','it','de'],lang
   base='http://127.0.0.1:8769/demos/municipal-website/'+('' if lang=='fr' else lang+'/')
   out=ROOT/'assets/media/municipal'/('' if lang=='fr' else lang);out.mkdir(parents=True,exist_ok=True)
   context=browser.new_context(viewport={'width':1440,'height':900},locale={'fr':'fr-FR','en':'en-GB','es':'es-ES','it':'it-IT','de':'de-DE'}[lang])

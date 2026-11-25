@@ -38,6 +38,7 @@ for lang in LANGS:
    for attr in ['href','src','poster']:
     value=node.get(attr)
     if not value:continue
+    if value.startswith(ORIGIN+'/casa-suprana-hotel/'):continue # Separate repository; checked on its own published origin path.
     if value.startswith(ORIGIN):value=value[len(ORIGIN):]
     split=urlsplit(value)
     if split.scheme or value.startswith('//') or not split.path:continue

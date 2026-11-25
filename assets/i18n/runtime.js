@@ -33,6 +33,8 @@ const reverse=new Map(Object.entries(messages).filter(([s])=>!s.includes('{')).m
 for(const source of catalog.municipalSources||[])if(messages[source]&&!source.includes('{'))reverse.set(normalize(messages[source]),source);
 export const sourceText=value=>/\n\s*\n/.test(value)?value.split(/(\n\s*\n)/).map(p=>/^\s*$/.test(p)?p:sourceText(p)).join(''):reverse.get(normalize(value))||value;
 export function localizedPath(href,lang=language){
+ const hotelOrigin='https://thecatsizerlab.github.io/casa-suprana-hotel/';
+ if(href?.startsWith(hotelOrigin)){const rest=href.slice(hotelOrigin.length).replace(/^(fr|en|it|es|de)\//,'');return /^(assets|src|docs|server|integrations)\//.test(rest)?hotelOrigin+rest:hotelOrigin+(lang==='fr'?'':lang+'/')+rest;}
  if(!href||/^(?:[a-z]+:|\/\/|#)/i.test(href))return href;
  const [,pathname,suffix]=href.match(/^([^?#]*)([\s\S]*)$/);
  if(pathname.startsWith(municipalBase)&&!pathname.slice(municipalBase.length).match(/^(assets|src)\//)){
@@ -40,6 +42,7 @@ export function localizedPath(href,lang=language){
   return municipalBase+(lang==='fr'?'':lang+'/')+rest+suffix;
  }
  const clean=pathname.replace(/^\/(fr|en|es|it|de)(?=\/)/,'');
+ if(clean.startsWith('/assets/media/hotel/'))return clean.replace(/\/hotel\/(fr|en|it|es|de)\//,'/hotel/'+lang+'/')+suffix;
  if(clean==='/'||clean==='/index.html'||clean.startsWith('/projects/'))return (lang==='en'?'':'/'+lang)+clean+suffix;
  if(clean.startsWith('/assets/media/municipal/'))return clean.replace(/\/municipal\/(?:fr|en|es|it|de)\//,'/municipal/').replace('/municipal/','/municipal/'+(lang==='fr'?'':lang+'/'))+suffix;
  return href;

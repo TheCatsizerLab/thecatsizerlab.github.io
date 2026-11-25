@@ -9,11 +9,16 @@ LANGS=['fr','en','es','it','de'];NAMES={'fr':'Français','en':'English','es':'Es
 BASE='/demos/municipal-website/';ORIGIN='https://thecatsizerlab.github.io'
 subprocess.run([sys.executable,str(ROOT/'tools/i18n/compile_catalogs.py')],cwd=ROOT,check=True)
 def localpath(href,lang):
+ hotel_origin=ORIGIN+'/casa-suprana-hotel/'
+ if href and href.startswith(hotel_origin):
+  rest=re.sub(r'^(fr|en|it|es|de)/','',href[len(hotel_origin):])
+  return hotel_origin+rest if re.match(r'(assets|src|docs|server|integrations)/',rest) else hotel_origin+('' if lang=='fr' else lang+'/')+rest
  if not href or re.match(r'^(?:[a-z]+:|//|#)',href,re.I):return href
  match=re.match(r'^([^?#]*)([\s\S]*)$',href);path,suffix=match.groups()
  if path.startswith(BASE) and not re.match(r'(?:assets|src)/',path[len(BASE):]):
   rest=re.sub(r'^(fr|en|es|it|de)/','',path[len(BASE):]);return BASE+('' if lang=='fr' else lang+'/')+rest+suffix
  clean=re.sub(r'^/(fr|en|es|it|de)(?=/)','',path)
+ if clean.startswith('/assets/media/hotel/'):return re.sub(r'/hotel/(fr|en|it|es|de)/','/hotel/'+lang+'/',clean)+suffix
  if clean in ['/','/index.html'] or clean.startswith('/projects/'):return ('' if lang=='en' else '/'+lang)+clean+suffix
  if clean.startswith('/assets/media/municipal/'):
   clean=re.sub(r'/municipal/(?:fr|en|es|it|de)/','/municipal/',clean)

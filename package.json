@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build:municipal": "node tools/municipal/build.mjs",
-    "test:municipal": "node --test tools/municipal/unit.test.mjs"
+    "test:municipal": "node --test tools/municipal/unit.test.mjs",
+    "build:i18n": "python tools/i18n/build.py"
   }
 }

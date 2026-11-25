@@ -1,12 +1,13 @@
 VALMER-SUR-RIVE — TECHNICAL & DEPLOYMENT GUIDE
-TheCatsizerLab / independent fictional municipal concept / 24 November 2026
+TheCatsizerLab / independent fictional municipal concept / 25 November 2026
 
 PURPOSE
 The municipal demonstration is independent from the portfolio. Existing projects,
 videos, release links, CRESS and Learning Studio demos keep their public URLs.
 The portfolio now leads with websites, business interfaces and integrations.
-The main overview is in English; /fr/ provides a French overview. Existing case
-studies remain in English, while the municipal demonstration is in French.
+The portfolio, all ten case studies, the municipal portal and local administration
+are available in FR, EN, ES, IT and DE. English portfolio paths and French municipal
+paths retain their original URLs. See ../i18n/verification.html for current results.
 
 ENTRY POINTS
 Portfolio: /
@@ -20,7 +21,8 @@ Verification report: /docs/municipal/verification.html
 ARCHITECTURE
 Runtime: ordinary HTML, CSS and browser-native ES modules. No framework runtime,
 bundler, hosted database, paid service, API key or server-side account is needed.
-75 pre-rendered pages provide actual page content and links before JavaScript.
+75 pre-rendered municipal pages per language (375 total) provide actual page content
+and links before JavaScript. The portfolio contributes 55 pages across five languages.
 Interactive functions progressively render the local data snapshot in place.
 
 demos/municipal-website/src/data.js
@@ -71,13 +73,17 @@ DEMO BOUNDARIES
 
 LOCAL PREVIEW AND REBUILD
 Use Node 22+ and a static server at the repository root.
-  npm run build:municipal
+  npm run build:i18n
   python -m http.server 8769 --bind 127.0.0.1
 Open http://127.0.0.1:8769/demos/municipal-website/
 Do not open the pages through file://; native ES modules require HTTP.
-Changing source rendering/layout/data requires build:municipal to update the
+Changing source rendering/layout/data requires build:i18n to update the
 pre-rendered HTML. Runtime JS/CSS changes are picked up on reload.
-The generator only writes the municipal directory; it does not delete projects.
+The full generator compiles the shared TSV catalogs, rebuilds municipal pages,
+and generates the five portfolio versions from tools/i18n/templates. It preserves
+existing project URLs. build:municipal alone rebuilds only French municipal HTML;
+use build:i18n for release builds. Python Beautiful Soup is needed for this build.
+The browser has no dependency on Python or QA tools.
 
 TESTING
   npm run test:municipal
@@ -131,3 +137,21 @@ for this concept. Photos retain each source's CC BY/CC BY-SA terms; adaptations
 retain attribution, licence links and share-alike terms where applicable. Do not
 describe the photography as original client reportage. Inter and Newsreader are
 locally hosted under SIL OFL. The original source details are in manifest.json.
+
+INTERNATIONALISATION
+Canonical indexed messages: tools/i18n/municipal-messages.json and portfolio-messages.json.
+Do not reorder these arrays: TSV rows use their stable indexes. Edit translations
+in municipal-*.tsv or portfolio-*.tsv; compile_catalogs.py creates five JSON catalogs.
+Runtime: assets/i18n/runtime.js; static generator: tools/i18n/build.py.
+Portfolio: / (EN), /fr/, /es/, /it/, /de/; case studies follow the same prefix.
+Municipal: /demos/municipal-website/ (FR), then en/, es/, it/, de/.
+Municipal business modules are shared by all language versions. Internal enum
+values and canonical seed fields remain stable; visible labels are translated.
+Freshly authored free text retains its author language. Known seed fields are
+canonicalised on save so an unchanged translated item does not become mixed-language.
+Language choice is maintained in URLs and recorded locally; no forced redirect is used.
+
+Current QA: tools/i18n/qa.py, portfolio_qa.py, layout_sweep.py, static_audit.py.
+Real screenshots: tools/i18n/capture.py (five languages, eight views each).
+The historical scripts under tools/municipal document the original release.
+Current five-language evidence and production Lighthouse: ../i18n/verification.html.

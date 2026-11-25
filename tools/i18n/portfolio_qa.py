@@ -40,6 +40,8 @@ with sync_playwright() as pw:
    picker=page.locator('.language-picker')
    picker.locator('summary').click()
    expect(picker.locator('.language-options')).to_be_visible()
+   bounds=picker.locator('.language-options').bounding_box()
+   assert bounds['x']>=0 and bounds['x']+bounds['width']<=width,(lang,bounds)
    for code in ['fr','en','es','it','de']:
     href=picker.locator(f'[data-language={code}]').get_attribute('href')
     expected=('' if code=='en' else '/'+code)+('/' if name=='portfolio' else '/projects/municipal-portal.html')

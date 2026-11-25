@@ -451,8 +451,11 @@ M	demos/municipal-website/vivre/sante/index.html
 M	demos/municipal-website/vivre/solidarite/index.html
 M	demos/municipal-website/vivre/sport/index.html
 A	docs/i18n/browser-results.json
+A	docs/i18n/file-list.txt
 A	docs/i18n/layout-sweep.json
+A	docs/i18n/lighthouse-results.json
 A	docs/i18n/portfolio-results.json
+A	docs/i18n/production-results.json
 A	docs/i18n/static-results.json
 A	docs/i18n/verification.html
 M	docs/municipal/technical-guide.txt
@@ -502,6 +505,7 @@ M	projects/sudoku-battle.html
 M	projects/tri-spells-arena.html
 M	projects/ultracast.html
 M	projects/wordpress-pms.html
+A	robots.txt
 A	tools/i18n/build.py
 A	tools/i18n/capture.py
 A	tools/i18n/compile_catalogs.py
@@ -528,6 +532,7 @@ A	tools/i18n/portfolio-existing-fr.json
 A	tools/i18n/portfolio-extra.tsv
 A	tools/i18n/portfolio-messages.json
 A	tools/i18n/portfolio_qa.py
+A	tools/i18n/production_qa.py
 A	tools/i18n/qa.py
 A	tools/i18n/report.py
 A	tools/i18n/static_audit.py
@@ -543,4 +548,3 @@ A	tools/i18n/templates/projects/tri-spells-arena.html
 A	tools/i18n/templates/projects/ultracast.html
 A	tools/i18n/templates/projects/wordpress-pms.html
 M	tools/municipal/build.mjs
-A	docs/i18n/file-list.txt

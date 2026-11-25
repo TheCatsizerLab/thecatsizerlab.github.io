@@ -3,4 +3,4 @@
 .territory-photo,.territory-copy{min-width:0}.territory-copy h2{overflow-wrap:break-word;hyphens:auto}
 
 .page-intro>*,.hero>*{min-width:0}html[lang=de] :is(h1,h2,h3){hyphens:auto;overflow-wrap:anywhere}html[lang=de] .admin-sidebar nav button{hyphens:auto;overflow-wrap:anywhere}
-@media(max-width:360px){.site-header .nav{flex-wrap:wrap;padding-block:.65rem;gap:.5rem}.site-header .nav-links{width:100%;justify-content:space-between}.business-home .nav-links{gap:.5rem}}
+@media(max-width:360px){.site-header .nav{flex-wrap:wrap;padding-block:.65rem;gap:.5rem}.site-header .nav-links{width:100%;justify-content:space-between}.site-header .nav .language-options{left:0;right:auto}.business-home .nav-links{gap:.5rem}}

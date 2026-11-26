@@ -16,4 +16,4 @@ Internationalisation architecture, direct language URLs and measured QA results:
 
 ## Studio redesign
 
-The portfolio presentation and case-study shell were redesigned on 26 November 2026. Run python tools/i18n/build.py --portfolio-only to rebuild the five-language portfolio without regenerating municipal pages. Python, Beautiful Soup and Pillow are build-time dependencies; the published site remains static. New editorial translations live in 	ools/i18n/portfolio-studio.tsv. See [measured verification](docs/studio/verification.html).
+The portfolio presentation and case-study shell were redesigned on 26 November 2026. Run `python tools/i18n/build.py --portfolio-only` to rebuild the five-language portfolio without regenerating municipal pages. Python, Beautiful Soup and Pillow are build-time dependencies; the published site remains static. New editorial translations live in `tools/i18n/portfolio-studio.tsv`. See [measured verification](docs/studio/verification.html).
